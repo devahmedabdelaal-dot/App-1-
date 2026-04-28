@@ -25,9 +25,14 @@ class ProductDetails extends StatelessWidget {
           borderRadius: BorderRadius.circular(20),
         ),
         child: MaterialButton(
-          onPressed: () {
-            controller.cartcontroller.refreshPage();
+          onPressed: () { 
+            if(controller.itemCountt > 0){
+               controller.cartcontroller.refreshPage();
             Get.toNamed(Approute.cart);
+            }else{
+              Get.snackbar("Alert", "Please add the quantity");
+            }
+           
           },
           child: Text('Add To Card', style: TextStyle(color: Colors.white)),
         ),

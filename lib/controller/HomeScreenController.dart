@@ -1,4 +1,5 @@
 import 'package:app1/screen/Home.dart';
+import 'package:app1/screen/favorite.dart';
 import 'package:app1/screen/setting.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -18,24 +19,19 @@ class HomescreencontrollerImp extends Homescreencontroller{
     Home(),
     Setting(),
    
-    // Column(
-    //   mainAxisAlignment: MainAxisAlignment.center,
-    //   children: [
-    //     Center(child: Text('settings'))
-    //   ],
-    // ),
     Column(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
         Center(child: Text('profile'))
       ],
     ),
-    Column(
-      mainAxisAlignment: MainAxisAlignment.center,
-      children: [
-        Center(child: Text('fivorits'))
-      ],
-    )
+    favorite(),
+    // Column(
+    //   mainAxisAlignment: MainAxisAlignment.center,
+    //   children: [
+    //     Center(child: Text('fivorits'))
+    //   ],
+    // )
   ];
  
  @override

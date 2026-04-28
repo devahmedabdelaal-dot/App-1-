@@ -64,7 +64,7 @@ class Cart extends StatelessWidget {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceAround,
                   children: [
-                    Text('Discount', style: TextStyle(fontSize: 20)),
+                    Text('Coupon Discount', style: TextStyle(fontSize: 20)),
                     Text(
                       '${controller.DiscountCoupon}%',
                       style: TextStyle(fontSize: 20),

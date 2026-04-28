@@ -105,15 +105,15 @@ print(statusrequest);
 
 
 void notifications()async{
-  print('=================on==============');
+  // print('=================on==============');
   FirebaseMessaging messaging = FirebaseMessaging.instance;
 
 // طلب صلاحيات (مهم جدًا)
 await messaging.requestPermission();
 
 // الحصول على التوكن
-String? token = await messaging.getToken();
-print("TOKEN==========================: $token");
+// String? token = await messaging.getToken();
+// print("TOKEN==========================: $token");
 }
 
 
